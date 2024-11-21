@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 import { Produto } from '../App'
 
-const api = createApi({
+const apiService = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://fake-api-tau.vercel.app/api'
   }),
@@ -13,6 +13,4 @@ const api = createApi({
   })
 })
 
-export const { useGetProdutoQuery } = api
-
-export default api
+export const { useGetProdutoQuery } = apiService
