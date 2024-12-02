@@ -13,4 +13,6 @@ const apiService = createApi({
   })
 })
 
-export const { useGetProdutoQuery } = apiService
+export const { useGetProdutoQuery } = apiService  
+
+export default apiService
